@@ -313,8 +313,14 @@
        margin-left: 10vw;
        margin-top: 10px;
    }
-   
+
 }
+   @media (min-width:427px) and (max-width: 687px){
+   .piedepagina{
+    font-size: 10px;        
+   }
+ }
+
 @media (min-width:769px) and (max-width: 867px){
     .carousel-caption {
         top: auto !important;
@@ -327,6 +333,16 @@
     .flex-item-honolulu-texto{
         padding-right: 2px;
         padding-left: 2px;
+    }
+}
+@media (min-width:1001px) and (max-width: 1404px){
+    .piedepagina{
+     font-size: 20px;        
+    }
+  }
+@media (min-width:1405px) and (max-width: 1699px){
+    .piedepagina{
+     font-size: 25px;        
     }
 }
 @media (min-width: 1700px){
@@ -367,7 +383,7 @@
     .etiquetascards {
         
         font-size: 15px;
- }
+    }
     .etiquetajava {
          width: 30%;
         
