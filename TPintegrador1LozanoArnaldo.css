@@ -1,0 +1,422 @@
+
+*{
+    margin:0;
+    padding: 0;
+
+    
+}
+.selcttickets {
+    color: rgb(1, 107, 1) !important;
+}
+
+.navbar{
+    font-size: 13px;
+    margin-right: 10px !important;
+}
+.d-block{
+    filter: brightness(50%);
+}
+
+.carousel-caption {
+    top: auto !important;
+    bottom: 10vw !important;
+    right: 12vw !important;
+    left: 50vw !important;
+    text-align: right !important;
+    font-size: 18px;
+
+}
+
+ .botonorador{
+    background: none;
+    border-color: white;
+    color: white;
+    border-radius: 10%;
+    font-size: 14px;
+    height: 30px;
+    width: 130px;
+    
+ }
+ .tickets{
+    background: green;
+    border: 0;
+ }
+ .conoceoradores{
+   margin-top: 10px;
+   margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+
+ }
+ .parrafo1{
+    font-size: 10px;
+ }
+ .parrafo2{
+    font-size: 20px;
+    
+ }
+ .flex-container-cards{
+    display: flex;
+    justify-content: center;
+ }
+ .flex-item-cards{
+    margin-left: 20px;
+ }
+
+.etiquetascards {
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    border-radius: 30%; 
+}
+.etiquetajava {
+    background-color: rgba(255, 183, 0, 0.85);
+    margin-right: 4px;
+    border-radius: 12%;
+    width: 25%; 
+}
+.etiquetareact {
+    background-color: lightskyblue;
+    border-radius: 15%;
+    color:aliceblue;
+    width: 15%;
+}
+.etiquetanegocios{
+    background-color: grey;
+    border-radius: 15%;
+    color:aliceblue;
+    width: 25%;
+    margin-right: 4px;
+}
+.etiquetastartups{
+    background-color:red;
+    border-radius: 15%;
+    color:aliceblue;
+    width: 20%;
+}
+.flex-container-honolulu{
+    display: flex;
+    margin-top: 30px;
+    background-color: #313133;
+
+}
+.flex-item-honolulu-imagen{
+    width: 50vw;
+    height: 600px;
+    padding-right: 2px;
+}
+.flex-item-honolulu-texto{
+   border-left: solid;
+   border-color:white;
+    height: 600px;
+    width: 50vw;
+    text-align: start;
+    color:white;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.flex-item-honolulu-texto-boton{
+    margin-left: 15px;
+    border-radius: 10%;
+    background: none;
+    padding: 2px;
+    color:white;
+
+}
+.formulario{
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+.flex-container-datos{
+    display: flex;
+}
+.charla{
+    border-bottom: 2px dotted #000;
+    text-decoration: none;
+    color: black;
+
+}
+.flex-item-apellido{
+    width: 50vw;
+}
+.flex-item-nombre{
+    width: 50vw;
+    padding-right: 20px;
+    
+}
+.tituloformulario{
+    text-align: center;
+    
+}
+.conviertete{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.orador2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.botonformulario{
+    width: 100%;
+    border-radius: 4px;
+    background-color: yellowgreen;
+    color:white;
+    border: 0;
+    margin-bottom: 25px;
+}
+.piedepagina{
+    margin-top: 10px;
+    background-color: rgb(36, 73, 99);
+    color: white;
+    
+
+}
+@media (max-width: 376px){
+    .card-text{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 427px) {
+    .d-block{
+        margin-top: 12vh;
+    }
+    .carousel-caption {
+        top: auto !important;
+        bottom: 1vw !important;
+        right: 1vw!important;
+        left: 1vw !important;
+        text-align: right !important;
+        font-size: 10px;
+    
+    }
+    .flex-item-cards{
+        margin:0;
+     }
+    .etiquetascards {
+        font-size: 9px;
+        text-align: center;
+        display: flex;
+        border-radius: 30%; 
+    }
+    .etiquetajava {
+        margin-right: 1px;
+        width: 70%; 
+    }
+    .etiquetareact {
+        width: 50%;
+    }
+    .etiquetanegocios{
+        width: 70%;
+        margin-right: 1px;
+    }
+    .etiquetastartups{
+        width: 70%;
+    }
+    .ada{
+        font-size: 18px;
+    }
+    .flex-item-honolulu-imagen{
+         height: 300px;
+        padding-right: 1px;
+    }
+    .flex-item-honolulu-texto{
+        height: 300px;
+        font-size: 9px;
+        
+    
+    }
+  
+    .flex-container-datos{
+        display: flex;
+    }
+    .flex-item-apellido{
+        width: 50vw;
+    }
+    .flex-item-nombre{
+        width: 50vw;
+        padding-right: 20px;
+        
+    }
+    .formulario{
+        margin-right: 10vw;
+        margin-left: 10vw;
+        margin-top: 10px;
+    }
+    .piedepagina{
+        font-size: 20%;        
+    
+    }
+}
+@media (min-width:427px) and (max-width: 768px){
+    .d-block{
+        margin-top: 10vh;
+    }
+    .carousel-caption {
+        top: auto !important;
+        bottom: 1vw !important;
+        right: 5vw!important;
+        left: 20vw !important;
+        text-align: right !important;
+        font-size: 13px;
+    }
+    .flex-item-cards{
+        margin:0;
+     }
+    .etiquetascards {
+        font-size: 9px;
+        text-align: center;
+        display: flex;
+        border-radius: 30%; 
+    }
+    .etiquetajava {
+        margin-right: 1px;
+        width: 43px; 
+    }
+    .etiquetareact {
+        width: 35px;
+    }
+    .etiquetanegocios{
+        width: 45px;
+        margin-right: 1px;
+    }
+    .etiquetastartups{
+        width: 40px;
+    }
+    .ada{
+        font-size: 18px;
+    }
+    .flex-item-honolulu-imagen{
+        height: 300px;
+       padding-right: 1px;
+   }
+   .flex-item-honolulu-texto{
+       height: 300px;
+       font-size: 12px;
+       padding-right: 2px;
+       padding-left: 2px;
+   }
+   .flex-container-datos{
+       display: flex;
+   }
+   .flex-item-apellido{
+       width: 50vw;
+   }
+   .flex-item-nombre{
+       width: 50vw;
+       padding-right: 20px;
+       
+   }
+   .formulario{
+       margin-right: 10vw;
+       margin-left: 10vw;
+       margin-top: 10px;
+   }
+   
+}
+@media (min-width:769px) and (max-width: 867px){
+    .carousel-caption {
+        top: auto !important;
+        bottom: 1vw !important;
+        right: 5vw!important;
+        left: 20vw !important;
+        text-align: right !important;
+        font-size: 20px;
+    }
+    .flex-item-honolulu-texto{
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+}
+@media (min-width: 1700px){
+    .navbar{
+        font-size: 25px;
+        margin-right: 20px !important;
+    }
+    .carousel-caption {
+        left: 30vw !important;
+        font-size: 30px;
+    }
+    .tickets{
+        background: green;
+        border: 0;
+     }
+     .botonorador{
+        background: none;
+        border-color: white;
+        color: white;
+        border-radius: 10%;
+        font-size: 25px;
+        height: 40px;
+        width: 220px;
+        
+     }
+     .tickets{
+        background: green;
+        border: 0;
+     }
+
+     .parrafo1{
+        font-size: 25px;
+     }
+     .parrafo2{
+        font-size: 40px;
+        
+     }
+    .etiquetascards {
+        
+        font-size: 15px;
+ }
+    .etiquetajava {
+         width: 30%;
+        
+    }
+    .etiquetareact {
+        width: 20%;
+    }
+    .etiquetanegocios{
+        width: 30%;
+    }
+    .etiquetastartups{
+        width: 30%;
+  }
+    .card-title{
+        font-size: 35px;
+        margin-top: 5px;
+    }
+    .card-text{
+        font-size: 25px;
+    }
+
+    .flex-item-honolulu-texto{
+      font-size: 25px;
+    }
+
+    .formulario{
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-top: 50px;
+    }
+    .conviertete{
+        font-size: 20px;
+    }
+    .orador2{
+        font-size: 60px;
+    }
+    .charlaignite{
+        font-size: 25px;
+    }
+    .form-control{
+        font-size: 25px;
+    }
+    .botonformulario{
+        font-size: 30px;
+    }
+    .piedepagina{
+        font-size: 25px;
+        }
+}
