@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding: 0;   
+}
+.selcttickets {
+    color: rgb(1, 141, 1) !important;
+}
+
+.navbartickets{
+    font-size: 13px;
+    background-color: rgb(55, 55, 55);
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+ .ventatickets{
+   margin-top: 65px;
+   margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+ .flex-container-cards-tickets{
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+ }
+ .flex-item-cards-tickets{
+    text-align: center;
+    margin-left: 3px;
+    border-radius: 0 !important;
+    border-width: 2px !important;
+    
+ }
+.estudiante{
+    border-color: blue !important;
+}
+.trainee{
+    border-color: rgb(85, 201, 116) !important;
+}
+.junior{
+    border-color: rgb(244, 200, 5) !important;
+}
+.predoc{
+    color: gray;
+    font-size: 12px;
+}
+
+
+.flex-container-formulario-tickets{
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-top: 10px;
+}
+
+.flex-container-datos-tickets{
+    display: flex;
+}
+
+.flex-item-apellido{
+    width: 50vw;
+}
+.flex-item-nombre{
+    width: 50vw;
+    padding-right: 20px;
+    
+}
+.flex-item-correo{
+    width: 100%;
+}
+.flex-item-total{
+    width: 100%;
+    margin-top: 20px !important;
+    padding-top: 10px;
+    padding-left: 15px;
+    border: solid 2px rgb(182, 222, 247);
+    background-color: rgb(203, 231, 249);
+    border-radius: 4px;
+    height: 50px;
+    
+}
+.tituloformulario{
+    text-align: center;
+    
+}
+.venta{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.valor{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.botonformulariot{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: yellowgreen;
+    color:white;
+    border: 0;
+    margin-bottom: 25px;
+}
+.bor{
+    margin-right: 10px;
+}
+.piedepagina{
+    font-size: 20px !important;
+    padding-left: 20px !important;
+    margin-top: 10px;
+    background-color: rgb(36, 73, 99);
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.botonpiedepagina{
+    background: none;
+    border: none;
+    color: white;
+
+}
+@media (max-width: 320px){
+    .titulest{
+        text-align: start;
+        font-size: 14px;
+        }
+}
+
+@media (max-width: 427px) {
+    
+    .flex-item-cards-tickets{
+        margin:0;
+    }
+    .titulest{
+        font-size: 14px;
+    }
+    .flex-container-cards-tickets{
+        margin-top:70px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .flex-item-apellido{
+        width: 50vw;
+    }
+
+    .flex-container-formulario-tickets{
+        margin-right: 1vw;
+        margin-left: 1vw;
+        margin-top: 10px;
+    }
+    
+    .tdes{
+        font-size: 10px;
+    }
+    .predoc{
+        font-size: 9px;
+    }
+    .piedepagina{
+        font-size: 10px;        
+    }
+}
+@media (min-width:427px) and (max-width: 768px){
+    .flex-item-cards-tickets{
+        margin:0;
+    }
+    .flex-container-cards-tickets{
+        margin-top:70px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .flex-item-apellido{
+        width: 50vw;
+    }
+
+    .flex-container-formulario-tickets{
+        margin-right: 10vw;
+        margin-left: 10vw;
+        margin-top: 10px;
+    }
+    
+    .tdes{
+        font-size: 10px;
+    }
+    .predoc{
+        font-size: 9px;
+    }
+    .piedepagina{
+        font-size: 15px;        
+    }
+}
+@media (min-width:1001px) and (max-width: 1699px){
+    .piedepagina{
+     font-size: 25px;        
+    }
+    
+  }
+
+@media (min-width:1700px) and (max-width: 2560px){
+    .piedepagina{
+     font-size: 25px;        
+    }
+}
