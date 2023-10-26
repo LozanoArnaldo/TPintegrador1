@@ -232,8 +232,6 @@
     .flex-item-honolulu-texto{
         height: 300px;
         font-size: 9px;
-        
-    
     }
   
     .flex-container-datos{
@@ -244,8 +242,7 @@
     }
     .flex-item-nombre{
         width: 50vw;
-        padding-right: 20px;
-        
+        padding-right: 20px; 
     }
     .formulario{
         margin-right: 10vw;
