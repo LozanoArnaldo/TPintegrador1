@@ -187,8 +187,8 @@
 }
 
 @media (max-width: 427px) {
-    .d-block{
-        margin-top: 12vh;
+    .carousel{
+        margin-top: 15vh !important;
     }
     .carousel-caption {
         top: auto !important;
@@ -254,8 +254,8 @@
     }
 }
 @media (min-width:427px) and (max-width: 768px){
-    .d-block{
-        margin-top: 10vh;
+    .carousel{
+        margin-top: 12vh;
     }
     .carousel-caption {
         top: auto !important;
