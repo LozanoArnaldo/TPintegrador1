@@ -43,15 +43,17 @@
 
       <!--cards de descuentos-->
       <div class="flex-container-cards-tickets">
-        <div class="card flex-item-cards-tickets estudiante" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title titulest">Estudiante</h5>
-              <p class="card-text tdes">Tienen un descuento</p>
-              <p class="card-text"><b>80%</b></p>
-              <p class="card-text predoc">*presentar documentación</p>
-              
-            </div>
-          </div>
+        <a onclick="seleccioncategoriaet()" id="selectestu">
+             <div class="card flex-item-cards-tickets estudiante" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title titulest">Estudiante</h5>
+                  <p class="card-text tdes">Tienen un descuento</p>
+                  <p class="card-text"><b>80%</b></p>
+                  <p class="card-text predoc">*presentar documentación</p>
+                </div>
+              </div>
+        </a>
+        <a onclick="seleccioncategoriatr()">
           <div class="card flex-item-cards-tickets trainee" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Trainee</h5>
@@ -60,6 +62,8 @@
                 <p class="card-text predoc">*presentar documentación</p>
             </div>
           </div>
+        </a>
+        <a onclick="seleccioncategoriajr()">
           <div class="card flex-item-cards-tickets junior" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Junior</h5>
@@ -68,6 +72,7 @@
                 <p class="card-text predoc">*presentar documentación</p>
             </div>
           </div>
+        </a>
         </div>
 
         
@@ -103,7 +108,8 @@
                 </div>
                 <div class="mb-3 flex-item-apellido">
                     <label for="exampleFormControlInput1" class="form-label">Categoria</label>
-                    <select id="categoria" class="form-select" placeholder="Estudiante">
+                    <select id="categoria" class="form-select" placeholder=" Seleccione categoria ">
+                      <option disabled selected id="selop">Selecciona una opción</option>
                         <option>Estudiante</option>
                          <option>Trainee</option>
                         <option>Junior</option>
@@ -125,9 +131,9 @@
 
         <!--pie de pagina-->
         <footer>
-          <div class="piedepagina">
+          <div class="piedepagina container-fluid">
           <div class="col">
-            <button class="botonpiedepagina">Preguntas Frecuentes</button>
+            <button class="botonpiedepagina">Preguntas<br>Frecuentes</button>
           </div>
           <div class="col">
             <button class="botonpiedepagina">Contáctos</button>
@@ -139,7 +145,7 @@
             <button class="botonpiedepagina">Conferencias</button>
           </div>
           <div class="col">
-            <button class="botonpiedepagina"> Termino y condiciones</button>
+            <button class="botonpiedepagina"> Termino y<br>condiciones</button>
           </div>
           <div class="col">
             <button class="botonpiedepagina">Privacidad</button>

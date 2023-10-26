@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;   
+    box-sizing: border-box;
 }
 .selcttickets {
     color: rgb(1, 141, 1) !important;
@@ -33,6 +34,9 @@
     border-width: 2px !important;
     
  }
+ .flex-container-cards-tickets a:hover{
+    transform: scale(1.15);
+ }
 .estudiante{
     border-color: blue !important;
 }
@@ -49,8 +53,8 @@
 
 
 .flex-container-formulario-tickets{
-    margin-left: 240px;
-    margin-right: 240px;
+    margin-left: 320px;
+    margin-right: 320px;
     margin-top: 10px;
 }
 
@@ -128,9 +132,51 @@
         text-align: start;
         font-size: 14px;
         }
+        .navbartickets{
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+        
+        .flex-item-cards-tickets{
+            margin:0;
+        }
+        .flex-container-cards-tickets{
+            margin-top:70px;
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+        .flex-item-apellido{
+            width: 50vw;
+        }
+    
+        .flex-container-formulario-tickets{
+            margin-right: 1vw;
+            margin-left: 1vw;
+            margin-top: 10px;
+        }
+        
+        .tdes{
+            font-size: 10px;
+        }
+        .predoc{
+            font-size: 9px;
+        }
+        .valor{
+            font-size: 20px;
+        }
+        
+        .piedepagina{
+            padding: 0 !important;
+            font-size: 8px !important;        
+        }
 }
 
-@media (max-width: 427px) {
+
+@media (min-width: 321px) and (max-width: 427px) {
+    .navbartickets{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
     
     .flex-item-cards-tickets{
         margin:0;
@@ -159,8 +205,12 @@
     .predoc{
         font-size: 9px;
     }
+    .valor{
+        font-size: 20px;
+    }
     .piedepagina{
-        font-size: 10px;        
+        font-size: 10px !important;  
+        padding: 1px !important;      
     }
 }
 @media (min-width:427px) and (max-width: 768px){
