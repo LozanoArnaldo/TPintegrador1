@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUEVO ORADOR</title>
+    <link rel="stylesheet" href="./TPintegrador1LozanoArnaldo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+
+
+  </head>
+<body>
+    <!--navBar-->
+    <nav class="navbar fixed-top navbar-expand-lg container-fluid navbar-dark bg-secondary">
+        <div class="container">
+               <a class="navbar-brand" href="./index.html">
+                <img src="./Imagenes/codoacodo.png" alt="Logo" Width="60" height="40" class="d-inline-block align-text-center">
+                Conf Bs As
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               
+               <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                   <ul class="navbar-nav ms-auto">
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="./listaoradores.html">Los Oradores</a>
+                        </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">El lugar y la fecha </a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="./nuevoorador.html">Conviérte en orador</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link  selcttickets"  href="./comprartickets.html" >Comprar tickets</a>
+                       </li>
+                   </ul>
+               </div>  
+        </div>
+   
+   </nav>
+
+<form class="formularionuevoorador">
+
+      <h2>Complete el siguiente formulario con todos sus datos</h2>
+      <style>
+        h2 {
+            text-transform: uppercase;
+        }
+    </style>
+      <div class="nomyapnuvorador">
+    <div class="mb-3 col-6">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" name ="nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+    </div>
+
+    <div class="mb-3 col-6">
+    <label for="apellido" class="form-label">Apellido</label>
+    <input type="text" name ="apellido" class="form-control" id="apellido" aria-describedby="emailHelp">
+    </div>
+</div>
+<div class="mailtemanuvor">
+<div class="mb-3 col-6">
+    <label for="mail" class="form-label">Mail</label>
+    <input type="email" name ="mail"class="form-control" id="mail">
+</div>
+<div class="mb-3 col-6">
+  <label for="exampleInputEmail1" class="form-label">Tema</label>
+  <input type="text" name ="tema"class="form-control" id="tema" aria-describedby="emailHelp">
+</div>
+</div>
+<div class="botonesnuvor">
+<button type="button" id="btncrear"class="btn btn-success col-5">Enviar</button>
+<button type="button" class="btn btn-danger col-5" onclick="borrar()">Cancelar</button>
+</div>
+
+</form>
+
+<!--pie de pagina-->
+<footer>
+  <div class="piedepagina">
+    <div class="col">
+      <button class="botonpiedepagina" row="2">Preguntas <br>Frecuentes</button>
+    </div>
+    <div class="col">
+      <button class="botonpiedepagina">Contáctos</button>
+    </div>
+    <div class="col">
+      <button class="botonpiedepagina">Prensa</button>
+    </div>
+    <div class="col">
+      <button class="botonpiedepagina">Conferencias</button>
+    </div>
+    <div class="col">
+      <button class="botonpiedepagina"> Termino y<br>condiciones</button>
+    </div>
+    <div class="col">
+      <button class="botonpiedepagina">Privacidad</button>
+    </div>
+    <div class="col">
+      <button class="botonpiedepagina">Estudiantes</button>
+    </div>
+  </div>
+</footer>
+<script>
+  crearOperador =() =>{
+    const orador = { 
+       nombre : document.getElementById("nombre").value,
+       apellido : document.getElementById("apellido").value,
+       mail : document.getElementById("mail").value,
+       tema : document.getElementById("tema").value
+    };
+    
+  fetch('http://localhost:8080/web-app/api/orador', {
+   method: "POST",
+  body: JSON.stringify(orador),
+  })
+        .then(response => response.json()) 
+        .then(json => {
+          alert(`alta de orador id:${json.id} ok ` );
+          borrar();})
+        .catch(err => console.log(err));
+       
+}
+
+ document.getElementById("btncrear").addEventListener('click', crearOperador);
+ 
+ 
+ 
+ borrar =() =>{
+    document.getElementById('nombre').value = '';
+    document.getElementById('apellido').value = '';
+    document.getElementById('mail').value = '';
+    document.getElementById('tema').value = '';
+}
+
+
+ 
+ </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>     
+
+</body>
+</html>

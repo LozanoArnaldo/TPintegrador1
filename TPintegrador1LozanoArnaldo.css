@@ -45,6 +45,31 @@
   text-transform: uppercase;
 
  }
+ .formularionuevoorador{
+    margin-top: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 20vh;
+    justify-content: center;
+    align-items: center;  
+ }
+ .mb-3{
+    padding-right: 20px;
+ }
+ .nomyapnuvorador{
+    margin-top: 50px;
+    display:flex;
+ }
+ .mailtemanuvor{
+    display:flex;
+ }
+ .botonesnuvor{
+    text-align: center;
+    margin-top: 50px;
+ }
+ .listaoradores{
+    height: 88vh;
+ }
  .parrafo1{
     font-size: 10px;
  }
@@ -52,7 +77,10 @@
     font-size: 20px;
 }
 
-
+.listaoradores{
+    margin-top: 60px;
+    
+}
  .flex-container-cards{
     display: flex;
     justify-content: center;
@@ -166,6 +194,7 @@
     margin-bottom: 25px;
 }
 .piedepagina{
+    
     margin-top: 10px;
     background-color: rgb(36, 73, 99);
     color: white;
@@ -174,6 +203,7 @@
     text-align: center;
 
 }
+
 .botonpiedepagina{
     background: none;
     border: none;
@@ -252,6 +282,7 @@
     .piedepagina{
         font-size: 7px;        
     }
+    
 }
 @media (min-width:427px) and (max-width: 768px){
     .carousel{
@@ -323,8 +354,8 @@
    .piedepagina{
     font-size: 10px;        
    }
- }
-
+   
+}
 @media (min-width:769px) and (max-width: 867px){
     .carousel-caption {
         top: auto !important;
@@ -343,6 +374,7 @@
     .piedepagina{
      font-size: 20px;        
     }
+   
   }
 @media (min-width:1405px) and (max-width: 1699px){
     .piedepagina{
@@ -436,4 +468,5 @@
     .piedepagina{
         font-size: 25px;
         }
+        
 }
