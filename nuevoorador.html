@@ -116,7 +116,7 @@
        tema : document.getElementById("tema").value
     };
     
-  fetch('http://localhost:8080/web-app/api/orador', {
+  fetch(`http://localhost:8080/web-app/api/orador`, {
    method: "POST",
   body: JSON.stringify(orador),
   })
